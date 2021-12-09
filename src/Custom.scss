@@ -1,0 +1,42 @@
+$primary: rgb(13, 58, 126);
+$off-white: #f8f9fa;
+$soft-gray: #adb5bd;
+$contrast-black: #212529;
+
+$form-select-indicator-color: $off-white;
+$body-bg: $off-white;
+$card-border-color: rgba($off-white, 0.125);
+
+$card-bg: $body-bg;
+$body-color: $contrast-black;
+
+$input-focus-border-color: lighten($primary, 10%);
+$form-check-input-border: 1px solid rgba(white, 0.25);
+$modal-content-bg: $body-bg;
+$btn-close-color: $off-white;
+$accordion-button-active-bg: darken($primary, 10%);
+$accordion-button-active-color: $body-color;
+.img-mid {
+    max-width: 175px;
+}
+.img-large {
+    max-width: 250px;
+}
+.my-modal {
+    width: 50vw !important;
+    max-width: 50vw !important;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    height: auto !important;
+}
+#lol {
+    font-size: 1px;
+    line-height: 78px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
