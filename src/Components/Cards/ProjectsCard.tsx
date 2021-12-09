@@ -8,17 +8,16 @@ import SwiperCore, { Autoplay } from 'swiper';
 
 
 export default function ProjectsCard() {
-    // install Swiper modules
     SwiperCore.use([Autoplay]);
     return (
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center home-card">
             <Container fluid className="text-center m-0 p-0">
                 <FadeIn transitionDuration={1500} delay={1500}>
                     <h1 className="my-1 display-3 fw-bold">Some of my Projects:</h1>
                     <p>feel free to swipe!</p>
                 </FadeIn>
-                <hr className="m-4" />
-                <Swiper slidesPerView={1} spaceBetween={0} loop={true} className="my-1 p-3 w-100" grabCursor={true} autoplay={{
+                <hr className="m-3" />
+                <Swiper slidesPerView={1} spaceBetween={0} loop={true} className="p-1" grabCursor={true} autoplay={{
                     "delay": 4000,
                     "disableOnInteraction": true
                 }}>
@@ -32,7 +31,7 @@ export default function ProjectsCard() {
                     <SwiperSlide>
                         <SwiperCard title={'imCARD website'}
                             content={'Created a responsive business website for imCARD the leading number portability provider in El Salvador.'}
-                            extraInfo={'Developed using plain HTML and CSS.'}
+                            extraInfo={'Developed using HTML 5 and CSS.'}
                             links={['https://imcard.com.sv/']}
                         />
                     </SwiperSlide>

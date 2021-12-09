@@ -1,18 +1,32 @@
-import React from 'react'
+import { child, ref, get } from 'firebase/database';
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap';
-import FadeIn from 'react-fade-in';
 import ReactHtmlParser from 'react-html-parser';
-import { SocialIcon } from 'react-social-icons';
-import TypistLoop from '../Components/Custom/TypistLoop';
-import NavBar from '../Components/NavBar/NavBar';
+import ReactMarkdown from 'react-markdown';
+import database from '../Util/firebase';
 
 export default function BlogView() {
-    const html = '<div><h1 className="my-1 display-1 fw-bold">Blog Post 1</h1><hr className="my-4" /><h2>Example HTML strings</h2></div>';
+    const [blogPost, setBlogPost] = useState({ title: ' ', content: ' ' })
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            const blogRef = ref(database)
+            get(child(blogRef, 'BlogPosts')).then(snapshot => {
+                if (snapshot.exists()) {
+                    setBlogPost(snapshot.val()[0])
+                }
+                else {
+                    console.log('we gotta go bald')
+                }
+            })
+        }
+        fetchBlogs()
+    }, [])
     return (
-        <div>
+        <div className = "container">
+            <h1>{blogPost.title}</h1>
             <div className="d-flex align-items-top">
                 <Container className="text-left">
-                    <div>{ReactHtmlParser(html)}</div>
+                <ReactMarkdown>{blogPost.content.replaceAll( "\\n", "\n" )}</ReactMarkdown>
                 </Container>
             </div>
         </div>

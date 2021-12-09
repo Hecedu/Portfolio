@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { getDatabase, ref, child, get } from "firebase/database";
 import { NavLink } from "react-router-dom";
 import { Container } from 'react-bootstrap'
 import FadeIn from 'react-fade-in/lib/FadeIn'
-import { SocialIcon } from 'react-social-icons'
+import database from '../../Util/firebase';
+
 
 export default function BlogCard() {
+
     return (
         <div className="d-flex align-items-center vh-100">
             <Container className="text-center ">
@@ -18,7 +21,6 @@ export default function BlogCard() {
                     </NavLink>
                 </p>
             </Container>
-
         </div>
     )
 }

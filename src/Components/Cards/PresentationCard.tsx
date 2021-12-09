@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons'
 
 export default function PresentationCard() {
     return (
-        <div className="d-flex align-items-center vh-100">
+        <div className="d-flex align-items-center home-card">
             <Container className="text-center ">
                 <FadeIn transitionDuration={750} delay={750}>
                     <h1 className="my-1 display-1 fw-bold">Héctor Magaña</h1>

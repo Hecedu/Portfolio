@@ -1,8 +1,7 @@
 import './Custom.scss';
+import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
-import React, { useRef } from 'react';
-import PresentationCard from './Components/Cards/PresentationCard';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as _, Routes, Route } from "react-router-dom";
 import HomePage from './Views/HomePage';
 import BlogView from './Views/BlogView';
 

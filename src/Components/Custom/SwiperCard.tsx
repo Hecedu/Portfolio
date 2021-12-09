@@ -9,17 +9,17 @@ interface SwiperCardProps {
 }
 export default function SwiperCard({title,content,extraInfo,links}:SwiperCardProps) {
     return (
-        <div className="d-flex align-items-center h-100 border border-1 shadow-sm py-4">
-            <Container>
-                <h2 className={'my-3'}>{title}</h2>
+        <div className="d-flex align-items-center h-100 mx-5 border border-1 shadow-sm py-3">
+            <div className='container px-5'>
+                <h2 className={'mb-3'}>{title}</h2>
                 <p>{content}</p>
                 <p className={'fst-italic'}>{extraInfo}</p>
                 {
                     links.map((link) => {
-                        return (<SocialIcon className="mx-1" url={link} />)
+                        return (<SocialIcon className="mx-1 my-0" url={link} />)
                     })
                 }
-            </Container>
+            </div>
         </div>
     )
 }

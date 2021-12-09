@@ -1,12 +1,10 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import { HashLink, NavHashLink } from 'react-router-hash-link'
-import { Link } from 'react-router-dom'
 
 
 export default function NavBar() {
     return (
-        <Navbar bg="dark" variant="dark" fixed="top" className="shadow" style={{ backgroundColor: "#071740", position: "sticky" }}>
+        <Navbar bg="dark" expand="md" variant="dark" fixed="top" className="shadow" style={{ backgroundColor: "#071740", position: "sticky" }}>
             <Container fluid>
                 <Navbar.Brand href="/#about">Hector Magana</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
