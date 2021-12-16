@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Hecedu/Hector-Portfolio/static/css/main.dcb60d16.chunk.css",
+    "main.js": "/Hecedu/Hector-Portfolio/static/js/main.288f6947.chunk.js",
+    "main.js.map": "/Hecedu/Hector-Portfolio/static/js/main.288f6947.chunk.js.map",
+    "runtime-main.js": "/Hecedu/Hector-Portfolio/static/js/runtime-main.9397195f.js",
+    "runtime-main.js.map": "/Hecedu/Hector-Portfolio/static/js/runtime-main.9397195f.js.map",
+    "static/css/2.4afd467b.chunk.css": "/Hecedu/Hector-Portfolio/static/css/2.4afd467b.chunk.css",
+    "static/js/2.69665e32.chunk.js": "/Hecedu/Hector-Portfolio/static/js/2.69665e32.chunk.js",
+    "static/js/2.69665e32.chunk.js.map": "/Hecedu/Hector-Portfolio/static/js/2.69665e32.chunk.js.map",
+    "index.html": "/Hecedu/Hector-Portfolio/index.html",
+    "precache-manifest.2330cb45a2a45441dc53a56566f432b2.js": "/Hecedu/Hector-Portfolio/precache-manifest.2330cb45a2a45441dc53a56566f432b2.js",
+    "service-worker.js": "/Hecedu/Hector-Portfolio/service-worker.js",
+    "static/css/2.4afd467b.chunk.css.map": "/Hecedu/Hector-Portfolio/static/css/2.4afd467b.chunk.css.map",
+    "static/css/main.dcb60d16.chunk.css.map": "/Hecedu/Hector-Portfolio/static/css/main.dcb60d16.chunk.css.map",
+    "static/js/2.69665e32.chunk.js.LICENSE.txt": "/Hecedu/Hector-Portfolio/static/js/2.69665e32.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9397195f.js",
+    "static/css/2.4afd467b.chunk.css",
+    "static/js/2.69665e32.chunk.js",
+    "static/css/main.dcb60d16.chunk.css",
+    "static/js/main.288f6947.chunk.js"
+  ]
+}
