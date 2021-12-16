@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
-import { getDatabase, ref, child, get } from "firebase/database";
+import React from 'react'
 import { NavLink } from "react-router-dom";
 import { Container } from 'react-bootstrap'
 import FadeIn from 'react-fade-in/lib/FadeIn'
-import database from '../../Util/firebase';
 
 
 export default function BlogCard() {

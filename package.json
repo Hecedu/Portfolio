@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "proxy": "https://homework-bdaf4-default-rtdb.firebaseio.com/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -29,6 +29,7 @@
     "react-scripts": "^3.4.4",
     "react-social-icons": "^5.6.1",
     "react-typist": "^2.0.5",
+    "react-unity-webgl": "^8.6.1",
     "react-use-scroll-snap": "0.0.3",
     "sass": "^1.43.4",
     "swiper": "^7.2.0",

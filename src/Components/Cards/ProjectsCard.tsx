@@ -25,7 +25,7 @@ export default function ProjectsCard() {
                         <SwiperCard title={'Cheat Squad'}
                             content={'Cheat Squad is a 2-player game your main objective is to throw your opponent out of the stage using your gun.'}
                             extraInfo={'Developed using Unity 2D and C#.'}
-                            links={['https://b-llage.itch.io/cheat-squad', 'https://github.com/Hecedu/Cheat-Squad']}
+                            links={['/cheat_squad','https://b-llage.itch.io/cheat-squad', 'https://github.com/Hecedu/Cheat-Squad']}
                         />
                     </SwiperSlide>
                     <SwiperSlide>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import { SocialIcon } from 'react-social-icons'
+
 interface SwiperCardProps {
     title: string;
     content: string;

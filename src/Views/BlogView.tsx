@@ -1,34 +1,33 @@
 import { child, ref, get } from 'firebase/database';
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap';
-import ReactHtmlParser from 'react-html-parser';
-import ReactMarkdown from 'react-markdown';
+import BlogList from '../Components/Blog/BlogList';
+import Blog from '../Models/Blog';
 import database from '../Util/firebase';
 
 export default function BlogView() {
-    const [blogPost, setBlogPost] = useState({ title: ' ', content: ' ' })
+    const [blogPosts, setBlogPosts] = useState<Blog[]>([])
     useEffect(() => {
         const fetchBlogs = async () => {
-            const blogRef = ref(database)
-            get(child(blogRef, 'BlogPosts')).then(snapshot => {
+            const databaseRef = ref(database)
+            get(child(databaseRef, 'BlogPosts')).then(snapshot => {
                 if (snapshot.exists()) {
-                    setBlogPost(snapshot.val()[0])
+                    setBlogPosts(snapshot.val())
                 }
                 else {
-                    console.log('we gotta go bald')
+                    console.log('error')
                 }
             })
         }
         fetchBlogs()
     }, [])
     return (
-        <div className = "container">
-            <h1>{blogPost.title}</h1>
-            <div className="d-flex align-items-top">
-                <Container className="text-left">
-                <ReactMarkdown>{blogPost.content.replaceAll( "\\n", "\n" )}</ReactMarkdown>
-                </Container>
-            </div>
+        <div className="container">
+            <h1>Blog Posts:</h1>
+            {
+                blogPosts.length > 0 ? 
+                <BlogList blogPosts={blogPosts} />:
+                <div>Loading...</div>
+            }
         </div>
     )
 }

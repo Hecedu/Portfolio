@@ -10305,6 +10305,11 @@
   dependencies:
     "prop-types" "^15.5.10"
 
+"react-unity-webgl@^8.6.1":
+  "integrity" "sha512-ZGh8zjbvEPoTXnt6A6n1Tvl4S507uM+O6fJQQ0u7D5lsM8mU5ZplsbXlynIrZC4rO83F2dkBHJmxSzvT6khVyA=="
+  "resolved" "https://registry.npmjs.org/react-unity-webgl/-/react-unity-webgl-8.6.1.tgz"
+  "version" "8.6.1"
+
 "react-use-scroll-snap@0.0.3":
   "integrity" "sha512-wuyfiSwoVwuRYgsKPt9WQ5+JlagVFOhMVA5lOlbpkqBkL1FTTOFtedYrneEsbDBHCef5PV4p2Ia20cH+QyCa9Q=="
   "resolved" "https://registry.npmjs.org/react-use-scroll-snap/-/react-use-scroll-snap-0.0.3.tgz"

@@ -9,8 +9,7 @@ const firebaseConfig = {
   projectId: "homework-bdaf4",
   storageBucket: "homework-bdaf4.appspot.com",
   messagingSenderId: "216463964469",
-  appId: "1:216463964469:web:bcc51556ac65423136347c",
-  measurementId: "${config.measurementId}"
+  appId: "1:216463964469:web:bcc51556ac65423136347c"
 };
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);

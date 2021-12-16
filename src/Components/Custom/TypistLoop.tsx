@@ -24,7 +24,6 @@ export default function TypistLoop({ strings }:TypistLoopProps) {
             {
                 repeatBool ? (
                     <Typist avgTypingDelay={70} cursor={{ show: true }} onTypingDone={() => setRepeatBool(false)}>
-                        <Typist.Backspace count={0} delay={800} />
                         {strings.map((string) => {
                             return (
                                 [
